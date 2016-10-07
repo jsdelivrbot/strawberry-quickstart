@@ -1,0 +1,25 @@
+@import 'strawberry/core';
+
+@include new-component(
+  $name: 'my-button', 
+  $selector: '.my-button', 
+  $declarations: (
+    'background-color': #be1931,
+    'border': none,
+    'color': white,
+    'padding': 10px 15px
+    )
+  ) { 
+
+  @include dynamic {
+    background-color: get('background-color');
+    border: get('border');
+    color: get('color');
+    padding: get('padding');
+  }
+
+  @include static {
+    cursor: pointer;
+  }
+  
+}
