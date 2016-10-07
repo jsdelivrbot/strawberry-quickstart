@@ -1,0 +1,6 @@
+@include component(
+  $name: 'my-button',
+  $declarations: (
+    'border-radius': 4px
+    )
+  );
