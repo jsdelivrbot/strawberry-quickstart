@@ -1,37 +1,37 @@
 {
-    "name": "strawberry-quickstart",
-    "description": "A Simple Strawberry Application Example",
-    "version": "1.0.0",
-    "keywords": [
-        "strawberry",
-        "sass",
-        "quickstart",
-        "example"
-    ],
-    "homepage": "https://github.com/strawberrysass/strawberry-quickstart/blob/master/README.md",
-    "bugs": {
-        "url": "https://github.com/strawberrysass/strawberry-quickstart/issues"
-    },
-    "license": "MIT",
-    "contributors": [
-        "Maxime Gélinas <maxime.gelinas@idmobiles.com>"
-    ],
-    "main": "./index.html",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/strawberrysass/strawberry-quickstart.git"
-    },
-    "scripts": {
-        "start": "npm run build && concurrently \"npm run build:w\" \"npm run serve\"",
-        "build": "node-sass app -o app --include-path node_modules/strawberry/src",
-        "build:w": "nodemon -e scss -x \"npm run build\"",
-        "serve": "lite-server"
-    },
-    "devDependencies": {
-        "concurrently": "^3.1.0",
-        "lite-server": "^2.2.2",
-        "node-sass": "^3.8.0",
-        "nodemon": "^1.10.2",
-        "strawberry": "1.0.0-alpha.3"
-    }
+  "name": "strawberry-quickstart",
+  "description": "A Simple Strawberry Application Example",
+  "version": "1.0.0",
+  "keywords": [
+    "strawberry",
+    "sass",
+    "quickstart",
+    "example"
+  ],
+  "homepage": "https://github.com/strawberrysass/strawberry-quickstart/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/strawberrysass/strawberry-quickstart/issues"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Maxime Gélinas <maxime.gelinas@idmobiles.com>"
+  ],
+  "main": "./index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strawberrysass/strawberry-quickstart.git"
+  },
+  "scripts": {
+    "start": "npm run build && concurrently \"npm run build:w\" \"npm run serve\"",
+    "build": "node-sass app -o app --include-path node_modules/strawberry/src",
+    "build:w": "nodemon -e scss -x \"npm run build\"",
+    "serve": "lite-server"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.10.2",
+    "strawberry": "1.0.0-alpha.3"
+  }
 }
