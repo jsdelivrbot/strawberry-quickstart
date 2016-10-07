@@ -24,7 +24,7 @@
     "scripts": {
         "start": "npm run build && concurrently \"npm run build:w\" \"npm run serve\"",
         "build": "node-sass app -o app --include-path node_modules/strawberry/src",
-        "build:w": "nodemon -e app -x \"npm run build\"",
+        "build:w": "nodemon -e scss -x \"npm run build\"",
         "serve": "lite-server"
     },
     "devDependencies": {
