@@ -1,2 +1,2 @@
-# strawberry-quickstart
-A simple Strawberry application example
+# Strawberry QuickStart
+A Simple Strawberry Application Example
