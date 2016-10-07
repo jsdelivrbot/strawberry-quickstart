@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "npm run build && concurrently \"npm run build:w\" \"npm run serve\"",
-    "build": "node-sass app -o app --include-path node_modules/strawberry/src",
+    "build": "node-sass app -o app --include-path node_modules/strawberry/dist",
     "build:w": "nodemon -e scss -x \"npm run build\"",
     "serve": "lite-server"
   },
@@ -32,6 +32,6 @@
     "lite-server": "^2.2.2",
     "node-sass": "^3.8.0",
     "nodemon": "^1.10.2",
-    "strawberry": "1.0.0-alpha.3"
+    "strawberry": "1.0.0-beta.1"
   }
 }
