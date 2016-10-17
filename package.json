@@ -16,16 +16,16 @@
   "contributors": [
     "Maxime Gélinas <maxime.gelinas@idmobiles.com>"
   ],
-  "main": "./index.html",
+  "main": "./src/index.html",
   "repository": {
     "type": "git",
     "url": "https://github.com/strawberrysass/strawberry-quickstart.git"
   },
   "scripts": {
     "start": "npm run build && concurrently \"npm run build:w\" \"npm run serve\"",
-    "build": "node-sass app -o app --include-path node_modules/strawberry/dist --include-path src",
+    "build": "node-sass src -o src --include-path node_modules/strawberry/dist --include-path src",
     "build:w": "nodemon -e scss -x \"npm run build\"",
-    "serve": "lite-server"
+    "serve": "cd src && lite-server"
   },
   "devDependencies": {
     "concurrently": "^3.1.0",
