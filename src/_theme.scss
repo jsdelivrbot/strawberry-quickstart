@@ -1,6 +1,6 @@
 @include component(
-  $name: 'my-button',
+  $name: 'my-greeting', 
   $declarations: (
-    'border-radius': 4px
+    'color': #369
     )
   );

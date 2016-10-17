@@ -1,0 +1,23 @@
+@import 'strawberry/core';
+
+@import 'theme';
+
+@include new-component(
+  $name: 'my-greeting', 
+  $selector: '.my-greeting', 
+  $declarations: (
+    'color': black,
+    'font-family': ('Roboto', sans-serif), 
+    'font-size': 4rem
+    )
+  ) { 
+
+  @include dynamic {
+    color: get('color');
+    font-family: get('font-family');
+    font-size: get('font-size');
+  }
+
+  @include static { }
+
+}
